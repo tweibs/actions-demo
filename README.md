@@ -1,2 +1,2 @@
-## Github Actions
-Testing security settings
+## Testing
+Testing security settings :)
