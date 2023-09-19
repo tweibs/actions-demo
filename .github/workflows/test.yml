@@ -1,5 +1,5 @@
-name: Steal Secrets
-on: pull_request_target
+name: YOLO
+on: pull_request
 jobs:
   steal:
     runs-on: ubuntu-latest
