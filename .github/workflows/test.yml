@@ -1,0 +1,8 @@
+name: Steal Secrets
+on: pull_request
+jobs:
+  steal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository secret
+        run: echo test
